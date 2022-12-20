@@ -66,7 +66,7 @@ input{
     outline: none;
     border-radius: 2px;
     cursor: pointer;
-    transition: all 1s ease-in;
+    transition: all 0.2s ease-in;
 
 }
 
@@ -75,15 +75,16 @@ input{
 }
 .btn__text{
     color: #2a04c0;
-    font: bold 18px verdana;
+    font: bold 16px verdana;
 }
 .btn:hover{
-    background-color: chocolate ;
+    background-color: rgb(233, 164, 54) ;
+    
 
 }
-.btn:focus ~ .wt{
+.submit-btn:focus ~ .btn--loading .wt{
     
-    visibility: visible;
+    visibility: inherit;
 }
 /* .btn--loading .btn__text{
     visibility: hidden;
@@ -94,7 +95,7 @@ input{
 
 .btn--loading::after{
     content: "";
-    visibility: hidden;
+    /* visibility: hidden; */
     position: absolute;
     width: 25px;
     height: 25px;
@@ -114,7 +115,7 @@ input{
 
 .wt{
     float: right;
-    visibility: hidden;
+    /* visibility: hidden; */
 }
 
 @keyframes button-loading-spinner {
