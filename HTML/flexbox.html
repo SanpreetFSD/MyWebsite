@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>felx box</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: row;
+            
+            background-color: aquamarine;
+            /* justify-content: center; */
+            justify-content: space-around;
+            /* align-items: center; */
+            align-items: baseline;
+            flex-wrap: wrap;
+            /* flex-direction:column; */
+            /* flex-flow: column wrap; */
+            
+
+        }
+        .red{
+            background-color: orangered;
+            /* flex: 1; */
+            height: 100px;
+            width: 100px;
+        }
+        .green{
+            background-color: greenyellow;
+            /* flex: 2; */
+            height: 150px;
+            width: 100px;
+        }
+        .blue{
+            background-color: steelblue;
+            /* flex: 3; */
+            height: 100px;
+            width: 100px;
+        }
+        .container>div{
+            font-size: 5vw;
+            padding: 0.5em;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="red">1</div>
+        <div class="green">2</div>
+        <div class="blue">3</div>
+        <div class="blue">3</div>
+        <div class="blue">3</div>
+        <div class="blue">3</div>
+        <div class="blue">3</div>
+        <div class="blue">3</div>
+    </div>
+</body>
+</html>

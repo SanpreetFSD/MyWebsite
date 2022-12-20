@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .main{
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+
+        }
+        .header{
+            flex-grow: 1;
+            height: 8%;
+        }
+        .body{
+            flex-grow: 5;
+            height: 80%;
+            display: flex;
+
+        }
+        .footer{
+            flex-grow: 1;
+            height: 8%;
+        }
+        .sec{
+            background-color: aquamarine;
+            margin: 2px;
+            box-shadow: 4px;
+        }
+        .sec-1{
+            background-color: beige;
+            border: 2px;
+            margin: 2px;
+        }
+        .sec-2{
+            flex: 1;
+        }
+
+    </style>
+    <title>Simple webpage</title>
+</head>
+<body>
+<div class="main">
+    <div class="header sec"> Header</div>
+    <div class="body sec">
+        <div class="sec-1"> section 1</div>
+        <div class="sec-1 sec-2">Section 2</div>
+        <div class="sec-1">Section 3</div>
+    </div>
+    <div class="footer sec"> Footer</div>  
+</div>
+</body>
+</html>

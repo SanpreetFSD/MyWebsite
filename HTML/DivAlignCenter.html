@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style type="text/css">
+        *{
+            margin: 0; padding: 0; box-sizing: border-box;
+        }
+        .parent_div{
+            width: 100vw; height: 100vh; background-color: #11b398;
+            /* position: relative; */
+            /* display: flex; justify-content: center; align-items: center; */
+            display: grid; place-items:center;
+        }
+        
+        .child_div{
+            height: 55vh; width: 55vw; background-color: #f3f77d;
+            /* position: absolute;
+            left: 50%; top: 50%;
+            transform: translate(-50%, -50%); */
+            text-align: center;
+        }
+
+    </style>
+
+    <title>DivCenterAlign</title>
+</head>
+<body>
+
+    <div class="parent_div">
+    
+        <div class="child_div">
+            <h1>Div Center Alignment 3 Ways</h1>
+        </div>
+    </div>
+    
+</body>
+</html>

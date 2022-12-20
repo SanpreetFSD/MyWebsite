@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container{
+            display: grid;
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            /* grid-template-columns: repeat(4, 1fr); */
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-gap: 15px;
+            grid-auto-rows: minmax(100px, auto);
+            grid-auto-columns: minmax(50px, auto);
+        }
+        .items{
+            background-color: lightgreen;
+            border: 3px solid coral;
+            border-radius: 3px;
+        }   
+
+        /* #item2{
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 2;
+            grid-column-end: 3;
+
+        } */
+        /* #item1{
+            grid-row-start: 1;
+            grid-row-end: 3;
+        } */
+        #item1{
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+        .item-1-container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .nested-item{
+            border: blue  3px solid;
+            border-radius: 3px;
+            background-color: lightgoldenrodyellow;
+
+        }
+    
+    </style>
+    <title>Css Grid</title>
+</head>
+<body>
+    <div class="container">
+        <!-- <div class="items">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde minus labore vero neque libero optio porro cupiditate ipsam delectus! Eius ad, dolore aperiam reiciendis laboriosam inventore quia cupiditate ea ipsum, distinctio nostrum unde animi nobis velit perferendis laborum officiis, quasi culpa obcaecati excepturi blanditiis iste. Quisquam possimus ex distinctio pariatur, vel consectetur laborum ducimus sunt architecto. Fuga sunt magnam consectetur ullam voluptas maxime accusantium quaerat cumque quis placeat in consequatur assumenda, aut doloribus ipsam aperiam ipsum minus quos quae aspernatur rem numquam ducimus repudiandae molestiae. Harum, tenetur! Atque, recusandae. Alias quisquam assumenda minima! Porro, pariatur? Praesentium voluptatem ipsam molestiae, dicta vitae doloribus similique nam, deserunt, laudantium officiis doloremque eveniet exercitationem alias aliquam et quia numquam architecto rem. Delectus velit voluptas assumenda debitis cum, dolor nam provident perspiciatis modi deleniti sit nesciunt perferendis iste tempore libero, omnis nulla molestias harum. Tempora consequatur iusto necessitatibus illum aliquam quidem ut quos perferendis et.</div> -->
+        <div class="items item-1-container" id="item1">
+            <div class="nested-item">Box in the Box 1</div>
+            <div class="nested-item">Box in the Box 2</div>
+            <div class="nested-item">Box in the Box 3</div>
+        </div>
+        <div class="items" id="item2">Box 2</div>
+        <div class="items">Box 3</div>
+        <div class="items">Box 4</div>
+        <div class="items">Box 5</div>
+    </div>
+</body>
+</html>
